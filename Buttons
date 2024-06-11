@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table id="myTable">
+    <tr> 
+        <th> S No. </th>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> City </th>
+        <th> Country </th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td> Rohit</td>
+        <td>Mehra</td>
+        <td> Pune</td>
+        <td> India</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Abdul</td>
+        <td> Ahmed</td>
+        <td> Karachi</td>
+        <td> Pakistan</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td> Sofia</td>
+        <td> Johans</td>
+        <td> New York</td>
+        <td> United states</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td> Simran</td>
+        <td> Mann</td>
+        <td> Punjab</td>
+        <td> India</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td> Saksham</td>
+        <td> Bhardwaj</td>
+        <td> Delhi</td>
+        <td> India</td>
+      </tr>
+  </table>
+  <button id="addRowToBottom">Add row to bottom</button>
+  <button id="addRowToTop">Add row to top</button>
+
+  <script>
+    let rowCount = 5;
+    const table = document.getElementById("myTable");
+    const addRowToBottomButton = document.getElementById("addRowToBottom");
+    const addRowToTopButton = document.getElementById("addRowToTop");
+
+    addRowToBottomButton.addEventListener("click", () => {
+      const newRow = table.insertRow(-1);
+      newRow.innerHTML = `
+        <td>${++rowCount}</td>
+        <td>New First Name</td>
+        <td>New Last Name</td>
+        <td>New City</td>
+        <td>New Country</td>
+      `;
+    });
+
+    addRowToTopButton.addEventListener("click", () => {
+      const newRow = table.insertRow(1);
+      newRow.innerHTML = `
+        <td> ${++rowCount} </td>
+        <td>New First Name</td>
+        <td>New Last Name</td>
+        <td>New City</td>
+        <td>New Country</td>
+      `;
+    });
+  </script>
+</body>
+</html>
