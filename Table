@@ -21,13 +21,13 @@
         <tr>
             <td>1</td>
             <td> Rohit</td>
-            <td>Mehra</td>
+            <td> Mehra</td>
             <td> Pune</td>
             <td> India</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Abdul</td>
+            <td> Abdul</td>
             <td> Ahmed</td>
             <td> Karachi</td>
             <td> Pakistan</td>
@@ -55,6 +55,5 @@
           </tr>
         </tbody>
     </table>
-    
 </body>
 </html>
