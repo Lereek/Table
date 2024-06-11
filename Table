@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table> 
+        <caption> HTML Table </caption>
+        <thead>
+        <tr> 
+            <th> S No. </th>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> City </th>
+            <th> Country </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td> Rohit</td>
+            <td>Mehra</td>
+            <td> Pune</td>
+            <td> India</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Abdul</td>
+            <td> Ahmed</td>
+            <td> Karachi</td>
+            <td> Pakistan</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td> Sofia</td>
+            <td> Johans</td>
+            <td> New York</td>
+            <td> United states</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td> Simran</td>
+            <td> Mann</td>
+            <td> Punjab</td>
+            <td> India</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td> Saksham</td>
+            <td> Bhardwaj</td>
+            <td> Delhi</td>
+            <td> India</td>
+          </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
